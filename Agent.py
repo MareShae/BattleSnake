@@ -52,13 +52,13 @@ class Agent:
         elif confidence == [1, 0]:
             self.orientation = RoundList(RotMat(-90, self.orientation))  # ClockWise: -90 deg
 
-        if self.orientation == [-1, 0]:
+        if self.orientation == [1, 0]:
             return 'up'  # Forward/Repeat: 0 deg
         elif self.orientation == [0, 1]:
             return 'right'  # ClockWise: 90 deg
         elif self.orientation == [0, -1]:
             return 'left'  # ClockWise: -90 deg
-        elif self.orientation == [1, 0]:
+        elif self.orientation == [-1, 0]:
             return 'down'  # ClockWise: 180 deg
 
         return response

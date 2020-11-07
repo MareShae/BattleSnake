@@ -14,7 +14,7 @@ SnakeAgent = None
 LogFile = 'Log.txt'
 
 
-def DList2List(DList: list[dict]):
+def DList2List(DList: list):
     List = []
     for Dict in DList:
         List += [[Dict['y'], Dict['x']]]
